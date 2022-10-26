@@ -62,7 +62,7 @@ double func1(double x, double y) {
     return answer;
 }
 
-// поиск приращения функции методом Рунгк-Кутта 4-5 порядка
+// поиск приращения функции методом Рунга-Кутта 4-5 порядка
 double RungeKutta45(double x, double y, double h, double(*func)(double, double)) {
     double k1 = h * func(x, y);
     double k2 = h * func(x + h / 2, y + k1 / 2);
